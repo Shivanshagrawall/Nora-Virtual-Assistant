@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Nora-Virtual-Assistant/static/css/main.3250a30d.css",
+    "main.js": "/Nora-Virtual-Assistant/static/js/main.fa2c294d.js",
+    "static/js/453.91231bb0.chunk.js": "/Nora-Virtual-Assistant/static/js/453.91231bb0.chunk.js",
+    "static/media/speak.gif": "/Nora-Virtual-Assistant/static/media/speak.6ecb0e4e70c7e42d3ef7.gif",
+    "static/media/aiVoice.gif": "/Nora-Virtual-Assistant/static/media/aiVoice.9c0bd8dde5867abb6a60.gif",
+    "static/media/ai.png": "/Nora-Virtual-Assistant/static/media/ai.ec32177541ba8e4ac5c1.png",
+    "index.html": "/Nora-Virtual-Assistant/index.html",
+    "main.3250a30d.css.map": "/Nora-Virtual-Assistant/static/css/main.3250a30d.css.map",
+    "main.fa2c294d.js.map": "/Nora-Virtual-Assistant/static/js/main.fa2c294d.js.map",
+    "453.91231bb0.chunk.js.map": "/Nora-Virtual-Assistant/static/js/453.91231bb0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3250a30d.css",
+    "static/js/main.fa2c294d.js"
+  ]
+}
