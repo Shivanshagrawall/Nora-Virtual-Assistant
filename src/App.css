@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main Section */
+.main {
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid red; */
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+
+/* AI Image */
+.main img {
+  height: 60%;
+  margin-top: 10px;
+  /* border: 2px solid red; */
+}
+
+.main span {
+  background: linear-gradient(to right, rgb(34, 221, 231), rgb(237, 4, 125));
+  background-clip: text;
+  color: transparent;
+  font-size: 24px;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+/* Button Section */
+.main button {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: aqua;
+  box-shadow: 2px 2px 50px aqua;
+  /* border: 2px solid red; */
+}
+
+/* Speaking Section */
+.speaking {
+  height: 25%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* border: 2px solid red; */
+}
+.humanSpeak {
+  width: 80px;
+  height: 80px;
+  /* border: 2px solid red; */
+}
+.aispeak {
+  height: 50px;
+  width: 70%;
+  /* border: 2px solid red; */
+}
+.speaking p {
   color: white;
+  font-size: 20px;
+  text-align: center;
+  /* border: 2px solid red; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive for medium screen */
+@media screen and (max-width: 900px) {
+  .speaking {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Responsive for small Screen */
+@media screen and (max-width: 500px) {
+  .speaking {
+    width: 100%;
   }
 }

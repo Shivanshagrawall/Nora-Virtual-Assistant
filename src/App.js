@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useContext, useState } from "react";
+import "./App.css";
+import ai from "./Assests/ai.png";
+import { CiMicrophoneOn } from "react-icons/ci";
+import { datacontext } from "./Context/UserContext";
+import speak from "./Assests/speak.gif";
+import aispeak from "./Assests/aiVoice.gif";
+const App = () => {
+  // UseContext
+  let {
+    recognition,
+    speaking,
+    setSpeaking,
+    prompts,
+    setPrompts,
+    response,
+    setResponse,
+  } = useContext(datacontext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="main">
+      {/* Image of AI Assistant */}
+      <img src={ai} alt="ai" />
+      <span>I'm Nova, Your Advanced Virtual Assistant</span>
+
+      {/* Button Click Here */}
+      {/* Response Image */}
+      {!speaking ? (
+        <button
+          onClick={() => {
+            setResponse(false);
+            setPrompts("Listening...");
+            recognition.start();
+            setSpeaking(true);
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Click Here <CiMicrophoneOn />
+        </button>
+      ) : (
+        <div className="speaking">
+          {!response ? (
+            <img src={speak} alt="speaking" className="humanSpeak" />
+          ) : (
+            <img src={aispeak} alt="speaking" className="aispeak" />
+          )}
+          <p>{prompts}</p>
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default App;
